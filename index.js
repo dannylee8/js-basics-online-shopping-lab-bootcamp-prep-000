@@ -17,6 +17,17 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var MsgTxt = "In your cart, you have "
+  
+  if (cart.length === 0) return "Your shopping cart is empty.";
+  
+  for (i = 0; i<cart.length; i++)
+  {
+    if (cart.length === 1) {
+      MsgTxt += `${cart[i]} at 
+    }
+  }
+  
 }
 
 function total() {
