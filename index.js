@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
-cart.push({itemName:})
+cart.push({itemName:name, itemPrice:})
   
 }
 
