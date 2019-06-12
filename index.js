@@ -24,10 +24,9 @@ function viewCart() {
   for (i = 0; i<cart.length; i++)
   {
     if (cart.length === 1) {
-      MsgTxt += `${cart[i]} at 
+      MsgTxt += `${cart[i].itemName} at ${cart[i].itemPrice}.`
     }
   }
-  
 }
 
 function total() {
