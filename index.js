@@ -22,7 +22,7 @@ function viewCart() {
   if (cart.length === 0) return "Your shopping cart is empty.";
 
   else {
-    for (i = 0; i<cart.length; i++)
+    for (var i = 0; i<cart.length; i++)
     {
         MsgTxt += `${cart[i].itemName} at $${cart[i].itemPrice}`
 
