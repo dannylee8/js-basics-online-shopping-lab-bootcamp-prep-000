@@ -20,13 +20,22 @@ function viewCart() {
   var MsgTxt = "In your cart, you have "
   
   if (cart.length === 0) return "Your shopping cart is empty.";
-  
-  for (i = 0; i<cart.length; i++)
-  {
-    if (cart.length === 1) {
-      MsgTxt += `${cart[i].itemName} at ${cart[i].itemPrice}.`
+
+  else {
+    for (i = 0; i<cart.length; i++)
+    {
+        MsgTxt += `${cart[i].itemName} at $${cart[i].itemPrice}`
+
+        if (cart.length === 1) {
+            return MsgTxt += ".";
+        }
+        else if (cart.length === i+2) {
+            return MsgTxt += `, and ${cart[1].itemName} at $${cart[1].itemPrice}.` 
+        }
+        else MsgTxt += ", ";  
     }
   }
+  return MsgTxt;
 }
 
 function total() {
