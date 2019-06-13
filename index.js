@@ -30,7 +30,7 @@ function viewCart() {
             return MsgTxt += ".";
         }
         else if (cart.length === i+2) {
-            return MsgTxt += `, and ${cart[2].itemName} at $${cart[2].itemPrice}.` 
+            return MsgTxt += `, and ${cart[3].itemName} at $${cart[3].itemPrice}.` 
         }
         else MsgTxt += ", ";  
     }
