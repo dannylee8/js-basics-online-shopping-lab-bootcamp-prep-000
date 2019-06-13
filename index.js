@@ -29,8 +29,8 @@ function viewCart() {
         if (cart.length === 1) {
             return MsgTxt += ".";
         }
-        else if (cart.length === i+2) {
-            return MsgTxt += `, and ${cart[3].itemName} at $${cart[3].itemPrice}.` 
+        else if (i+2 === cart.length) {
+            return MsgTxt += `, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.` 
         }
         else MsgTxt += ", ";  
     }
